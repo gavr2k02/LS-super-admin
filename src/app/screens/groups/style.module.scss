@@ -1,0 +1,22 @@
+@import '../style.module.scss';
+
+.group {
+  @extend %baseContainer;
+
+  .header {
+    @extend %baseHeader;
+    font-size: 2vw;
+
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .cardsContainer {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}

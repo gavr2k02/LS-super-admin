@@ -1,0 +1,46 @@
+@import '../style.module.scss';
+
+.main {
+  @extend %baseContainer;
+
+  .header {
+    @extend %baseHeader;
+    font-size: 2vw;
+
+    .containerDate {
+      width: 40%;
+      height: 100%;
+
+      .field {
+        padding: 2%;
+        margin: 0 5%;
+        background-color: #242424;
+        color: white;
+      }
+
+      .select {
+        width: 40%;
+      }
+    }
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .cardsContainer {
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 90%;
+    width: 100%;
+
+    .block {
+      display: inline-block;
+      vertical-align: top;
+      height: 88%;
+      width: 40%;
+    }
+  }
+}

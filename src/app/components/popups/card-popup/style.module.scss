@@ -1,0 +1,18 @@
+.buttonAdd {
+  width: 2vw;
+  height: 2vw;
+  margin: 0 1vw;
+  cursor: pointer;
+}
+
+.buttonAdd:active {
+  transform: scale(0.8);
+}
+
+.buttonEdit {
+  margin: 2%;
+  width: 100%;
+  height: 50%;
+  color: white;
+  background-color: #1e1e1e;
+}

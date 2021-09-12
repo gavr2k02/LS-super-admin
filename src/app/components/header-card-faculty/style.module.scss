@@ -1,0 +1,23 @@
+.cardFacultyHeader {
+  width: 12vw;
+  height: 4vh;
+  background-color: black;
+  margin: 0;
+  margin-left: 1vw;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 15px;
+
+  .name {
+    color: white;
+    margin: 5%;
+    font-size: 1vw;
+  }
+
+  .editPanel {
+    width: 12%;
+    height: 4vh;
+  }
+}

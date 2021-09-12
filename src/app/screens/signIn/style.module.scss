@@ -1,0 +1,52 @@
+@import '../style.module.scss';
+
+.signIn {
+  @extend %baseContainer;
+  margin: 0 auto;
+  width: 50%;
+  height: 30vh;
+  background-color: #333;
+  border-radius: 15px;
+
+  .conatainer {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    .field {
+      margin: 3% auto 0 auto;
+      padding: 1vw;
+      width: 80%;
+      height: 2vh;
+      background-color: #242424;
+      color: white;
+    }
+
+    .buttons {
+      padding: 0;
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      width: 80vw;
+      margin: 1% auto 0 auto;
+
+      %button {
+        margin: 3% auto 0 auto;
+        padding: 1vw;
+        width: 80%;
+        height: 5vh;
+        color: white;
+        background-color: #1e1e1e;
+      }
+
+      .buttonSignIn {
+        @extend %button;
+      }
+
+      .buttonSignUp {
+        @extend %button;
+      }
+    }
+  }
+}

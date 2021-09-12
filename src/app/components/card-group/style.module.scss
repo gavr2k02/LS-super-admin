@@ -1,0 +1,22 @@
+.cardGroup {
+  width: 16vw;
+  height: 8vh;
+  margin: 1%;
+  background-color: black;
+
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 15px;
+
+  .name {
+    color: white;
+    margin: 5%;
+  }
+
+  .editPanel {
+    width: 15%;
+    height: 8vh;
+  }
+}

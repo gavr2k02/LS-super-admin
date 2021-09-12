@@ -1,0 +1,34 @@
+.menuIcon {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.menuIcon:active {
+  transform: scale(0.8);
+}
+
+.buttons {
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1%;
+
+  %button {
+    margin: 2%;
+    width: 100%;
+    height: 50%;
+    color: white;
+    background-color: #1e1e1e;
+  }
+
+  .buttonAdd {
+    @extend %button;
+  }
+
+  .buttonCanel {
+    @extend %button;
+  }
+}

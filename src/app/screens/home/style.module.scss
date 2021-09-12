@@ -1,0 +1,9 @@
+@import '../style.module.scss';
+
+.home {
+  @extend %baseContainer;
+
+  .header {
+    @extend %baseHeader;
+  }
+}
