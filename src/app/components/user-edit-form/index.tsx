@@ -8,6 +8,7 @@ import { CardTypePopup } from '../../common/enums/CardTypePopup';
 import { IFaculty } from 'models/interfaces/IFaculty';
 import { IGroup } from 'models/interfaces/IGroup';
 import { ICourse } from 'models/interfaces/ICourse';
+import UpdateLoginDataUser from '../popups/update-login-data-user';
 
 export interface IUserEditProps {
   value: IStudent | ITeacher;
@@ -187,9 +188,7 @@ export default function UserEditForm({ value, type, setLoad, faculties, groups, 
       <button className={style.button} onClick={() => editHandler()}>
         Update
       </button>
-      <button className={style.button} onClick={() => console.log('TODO')}>
-        Change password
-      </button>
+      <UpdateLoginDataUser user={value} type={type} />
     </div>
   );
 }

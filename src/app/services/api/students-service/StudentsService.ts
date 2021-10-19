@@ -45,6 +45,11 @@ export class StudentsService extends RestService<IStudent> implements IStudentsS
     this.studentHandler(result);
   }
 
+  public async updateStudentPassword(value: IStudent): Promise<void> {
+    const result: IStudent = await this.patch('students/password', value);
+    this.studentHandler(result);
+  }
+
   public subscribe(channel: string): void {
     this.pubnub.subscribe({ channels: [channel] });
     this.pubnub.addListener({

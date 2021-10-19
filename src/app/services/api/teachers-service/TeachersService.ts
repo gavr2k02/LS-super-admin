@@ -43,6 +43,13 @@ export class TeachersService extends RestService<ITeacher> implements ITeachersS
     this.teacherHandler(result);
   }
 
+  public async updateTeacherPassword(value: ITeacher): Promise<void> {
+    validateCardData(value, this._teachers);
+
+    const result: ITeacher = await this.patch('teachers/password', value);
+    this.teacherHandler(result);
+  }
+
   public subscribe(channel: string): void {
     this.pubnub.subscribe({ channels: [channel] });
     this.pubnub.addListener({

@@ -22,7 +22,7 @@ interface IBoundedTooltipProps {
 
 export default function BoundedTooltip({ value, type, faculties }: IBoundedTooltipProps) {
   return (
-    <div className='tooltipBoundary'>
+    <div className={style.tooltipBoundary}>
       <Popup
         contentStyle={styleContent}
         trigger={<img class={style.menuIcon} src={menu} />}

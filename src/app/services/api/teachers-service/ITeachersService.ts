@@ -9,6 +9,7 @@ export interface ITeachersService {
   createTeacher(value: ITeacher): Promise<void>;
   deleteTeacher(teacherId: string): Promise<void>;
   updateTeacher(teacher: ITeacher): Promise<void>;
+  updateTeacherPassword(teacher: ITeacher): Promise<void>;
   subscribe(channel: string): void;
   unsubscribe(channel: string): void;
 }

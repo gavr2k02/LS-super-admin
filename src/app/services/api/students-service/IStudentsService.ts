@@ -10,6 +10,7 @@ export interface IStudentsService {
   createStudent(value: IStudent): Promise<void>;
   deleteStudent(studentId: string): Promise<void>;
   updateStudent(value: IStudent): Promise<void>;
+  updateStudentPassword(value: IStudent): Promise<void>;
   subscribe(channel: string): void;
   unsubscribe(channel: string): void;
 }

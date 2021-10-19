@@ -8,27 +8,32 @@
   transform: scale(0.8);
 }
 
-.buttons {
-  padding: 0;
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
+.tooltipBoundary {
+  height: 100%;
   width: 100%;
-  margin: 1%;
 
-  %button {
-    margin: 2%;
+  .buttons {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
     width: 100%;
-    height: 50%;
-    color: white;
-    background-color: #1e1e1e;
-  }
+    margin: 1%;
 
-  .buttonAdd {
-    @extend %button;
-  }
+    %button {
+      margin: 2%;
+      width: 100%;
+      height: 50%;
+      color: white;
+      background-color: #1e1e1e;
+    }
 
-  .buttonCanel {
-    @extend %button;
+    .buttonAdd {
+      @extend %button;
+    }
+
+    .buttonCanel {
+      @extend %button;
+    }
   }
 }
