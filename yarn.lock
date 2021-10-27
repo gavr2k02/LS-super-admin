@@ -1185,7 +1185,7 @@ minimist@^1.2.5:
 
 "models@https://github.com/gavr2k02/learning-service-models":
   version "1.0.0"
-  resolved "https://github.com/gavr2k02/learning-service-models#4549184f21c3f45bb6cce5d5dec1a99602c9214f"
+  resolved "https://github.com/gavr2k02/learning-service-models#b1956a70858e60dd5abcaf28c3ad1ad33761510e"
 
 ms@2.1.2:
   version "2.1.2"

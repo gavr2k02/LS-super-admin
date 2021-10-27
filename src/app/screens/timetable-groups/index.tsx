@@ -8,12 +8,11 @@ import { api } from '../../services/api';
 import style from './style.module.scss';
 import Loading from '../loading';
 import { CardTypePopup } from '../../common/enums/CardTypePopup';
-import HeaderBaseCard from '../../components/header-card-faculty';
+import HeaderBaseCard from '../../components/header-base-card';
 import { ICourse } from 'models/interfaces/ICourse';
 import { ITeacher } from 'models/interfaces/ITeacher';
 import GroupTimeTableEditForm from '../../components/group-timetable-edit-form';
 import { IDayLesson } from 'models/interfaces/IDayLesson';
-import { toDateString } from '../../common/utils';
 
 interface IDateGroupParams {
   year: string;

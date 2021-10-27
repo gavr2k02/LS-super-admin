@@ -1,6 +1,6 @@
 import style from './style.module.scss';
 import { useParams } from 'react-router-dom';
-import HeaderBaseCard from '../../components/header-card-faculty';
+import HeaderBaseCard from '../../components/header-base-card';
 import { useObservable } from '../../common/utils/useObservable';
 import { api } from '../../services/api';
 import { useEffect, useState } from 'preact/hooks';
